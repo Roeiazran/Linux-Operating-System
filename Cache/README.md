@@ -48,6 +48,7 @@ typedef struct address_s {
     long set_index;
     long tag;
 } address_t;
+```
 
 ---
 
@@ -59,4 +60,3 @@ s t b E: 2 2 2 2
 1
 2
 -1
-
