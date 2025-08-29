@@ -53,6 +53,7 @@ typedef struct address_s {
 ---
 
 ## Example
+```
 Size of data: 16
 Input data >> 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
 s t b E: 2 2 2 2
@@ -60,3 +61,4 @@ s t b E: 2 2 2 2
 1
 2
 -1
+```
