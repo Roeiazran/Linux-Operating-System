@@ -1,7 +1,20 @@
-This program processes read and write requests from a file (requests.txt) and modifies a data file (data.txt) accordingly. The implementation ensures that writes insert data without overwriting existing content, and reads retrieve the correct portion of the file.
-Features:
-1. Reads a specified range from data.txt and saves the results to read_results.txt.
-2. Writes new data at a given offset while preserving the rest of the file.
-3. Processes requests from an input file instead of interactive user input.
-4. Handles edge cases, such as invalid offsets, while maintaining file integrity.
-5. Ensures data persistence using proper file operations (lseek, read, write).
+# File Instruction Processor
+
+## Overview
+This C program processes a series of instructions from a request file to **read from or write to a data file**. It supports:
+
+- **READ** operations: extract portions of the data file.
+- **WRITE** operations: insert text at specific offsets, shifting file content as needed.
+- **QUIT** command: terminates the program.
+- Robust handling of **invalid instructions**.
+
+Results of read operations are saved to a `read_results.txt` file.
+
+---
+
+## Features
+- Validates instructions against file bounds.
+- Handles overlapping writes by shifting existing content.
+- Supports dynamic instruction text using memory allocation.
+- Generates a result file for all READ operations.
+- Graceful error handling with descriptive messages.
