@@ -1,5 +1,16 @@
-This program implements a file system synchronization tool in C. It compares files between two directories and copies newer or missing files from a source directory to a destination directory. This utility demonstrates the use of key system calls such as chdir(), getcwd(), fork(), exec(), and wait().
-Objectives:
-1. Gain hands-on experience with file system navigation using chdir() and getcwd().
-2. Practice process creation and management with fork(), exec(), and wait().
-3. Learn to work with directory contents and file attributes.
+# File Synchronization Utility
+
+## Overview
+This project is a C program that synchronizes files between a source and a destination directory. It copies new files, updates changed files, and skips identical files. The program handles directories, creates missing destination directories, and ensures that only newer files overwrite older ones.
+
+---
+
+## Features
+- Synchronizes files from a source directory to a destination directory.
+- Detects new files and copies them automatically.
+- Compares file contents and timestamps to update only modified files.
+- Creates missing destination directories with specified permissions.
+- Works recursively with directories and supports multiple file types.
+- Displays informative messages for actions performed during synchronization.
+
+---
